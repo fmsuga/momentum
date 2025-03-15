@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +55,7 @@ html, body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  z-index: 9999; /* Asegura que quede por encima de otros elementos */
+  z-index: 9999;
 }
 
 .whatsapp-button:hover {
@@ -221,6 +222,59 @@ h2 {
 #btn-tarjeta.active {
   background-color: rgb(51, 34, 202);
 }
+/*beneficios*/
+/* Sección de Beneficios */
+.benefits {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+/* Contenedor del slider */
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Track que contiene las imágenes */
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: max-content;
+  animation: moveLogos 20s linear infinite;
+}
+
+/* Logos individuales */
+.logo-track img {
+  height: 130px;
+  max-width: 250px;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(0.8);
+}
+
+/* Efecto al pasar el mouse */
+.logo-track img:hover {
+  transform: scale(1.8);
+  filter: brightness(1);
+}
+
+/* Animación infinita sin cortes */
+@keyframes moveLogos {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%); /* Mueve solo la mitad para reiniciar sin cortes */
+  }
+}
+
+
 
 .footer {
   background-color: #000000;

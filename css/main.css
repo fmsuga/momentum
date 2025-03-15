@@ -1,5 +1,13 @@
-@use "../utilidades/variables";
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #00141F;
+}
 
 html, body {
   height: 100%;
@@ -13,29 +21,25 @@ html, body {
 }
 
 .bg-navbar {
-  background-color: $color-logo;
-  ul {
-    li {
-      a {
-        color: white;
-      }
-    }
-  }
+  background-color: #001b29;
+}
+.bg-navbar ul li a {
+  color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline;
 }
+
 .navbar .navbar-nav .nav-item:hover {
   background-color: #00273a;
   border-radius: 10px;
-  }
+}
 
 .navbar .navbar-nav .nav-item:hover .nav-link {
   color: white;
 }
 
-// boton de Whatsapp
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -103,7 +107,7 @@ h2 {
 }
 
 .btn:hover {
-  background: $color-boton-apretado;
+  background: #100953;
   color: white;
 }
 
@@ -112,32 +116,32 @@ h2 {
   padding: 4.5rem;
 }
 
-
 .actividades {
   padding: 1.5rem;
   text-align: center;
-  h2 {
-    span {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: $color-terciario;
-    }
-    color: white;
-  }
-  .p-actividades {
-    color: white;
-  }
-  }
+}
+.actividades h2 {
+  color: white;
+}
+.actividades h2 span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e54e9;
+}
+.actividades .p-actividades {
+  color: white;
+}
 
 .card {
   margin-top: 4em;
-  height: 100%;  
+  height: 100%;
   box-shadow: 7px 13px 13px #0A2647;
 }
+
 .card-img-top {
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover; 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .sedes {
@@ -146,24 +150,21 @@ h2 {
   align-items: center;
   flex-direction: column;
   margin-top: 8em;
-    .texto-sede {
-      color: white;
-      margin-top: 1.5em;      
-        span {
-          color: $color-terciario;
-          font-size: larger;
-          font-weight: bold;
-        }
-    }
-    .map {      
-      background-color: rgba(0, 0, 0, 0.65);
-      padding: 15px;
-      margin-bottom: 1rem;
-      
-    }
-   }
-
-
+}
+.sedes .texto-sede {
+  color: white;
+  margin-top: 1.5em;
+}
+.sedes .texto-sede span {
+  color: #1e54e9;
+  font-size: larger;
+  font-weight: bold;
+}
+.sedes .map {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px;
+  margin-bottom: 1rem;
+}
 
 .planes {
   background-image: url("../../img/momentum-gymdos.jpg");
@@ -171,19 +172,19 @@ h2 {
   margin-top: 4em;
   height: 100vh;
   text-align: center;
-  h3 {
-    padding: 25px;
-    color: white;
-    font-weight: bold;
-    }
-  .p-resaltado {
-     font-size: 18px;
-     color: white;
-    background-color: rgba(255, 255, 255, 0.192);
-    display: inline;
-    border-radius: 20px;
-    padding: 6px;
-  }
+}
+.planes h3 {
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+}
+.planes .p-resaltado {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.192);
+  display: inline;
+  border-radius: 20px;
+  padding: 6px;
 }
 
 .card-plan {
@@ -192,7 +193,7 @@ h2 {
 
 /* Estilos generales de los botones */
 .btn-toggle {
-  background-color: #120b55; 
+  background-color: #120b55;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -208,20 +209,20 @@ h2 {
 
 /* Estilo para el botón activo */
 .btn-toggle.active {
-  background-color: rgb(51, 34, 202); 
+  background-color: rgb(51, 34, 202);
   border: 3px solid rgb(0, 0, 0);
   transform: scale(1.05);
 }
 
 #btn-tarjeta {
-  background-color: #120b55; 
+  background-color: #120b55;
 }
 
 #btn-tarjeta.active {
   background-color: rgb(51, 34, 202);
 }
+
 /* beneficios */
-//beneficios
 /* Sección de Beneficios */
 .benefits {
   text-align: center;
@@ -265,17 +266,12 @@ h2 {
 /* Animación de desplazamiento */
 @keyframes moveLogos {
   from {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
   to {
-      transform: translateX(-50%); /* Se mueve la mitad del ancho */
+    transform: translateX(-50%); /* Se mueve la mitad del ancho */
   }
 }
-
-
-
-//Footer
-
 .footer {
   background-color: #000000;
   margin-top: 3rem;
@@ -322,7 +318,7 @@ h2 {
 .footer-copy {
   margin-top: 1rem;
   justify-self: center;
-  background-color: $color-boton;
+  background-color: #A1E3F9;
   color: #0A2647;
   font-weight: 500;
   padding: 4px;
@@ -348,12 +344,12 @@ h2 {
   color: white;
 }
 
-.footer-email::placeholder{
+.footer-email::placeholder {
   color: white;
 }
 
 .footer-submit {
-  background-color: $color-boton;
+  background-color: #A1E3F9;
   color: #0A2647;
   border: none;
   font-weight: 500;
@@ -371,33 +367,27 @@ h2 {
   color: white;
 }
 
-.ig{
+.ig {
   width: 15%;
 }
+
 .footer-info a {
-  
   color: white;
 }
 
-@media (width >=900px) {
-
+@media (width >= 900px) {
   .footer {
-    background-color: $color-principal;
+    background-color: #00141F;
   }
-
-  
   .footer-content {
     background-color: #000000;
     border-radius: 30px 30px 0 0;
   }
-
   .footer-main {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 55% 1fr;
-    grid-template-areas: 
-    "logo links"
-    "contact suscribe";
+    grid-template-areas: "logo links" "contact suscribe";
   }
   .footer-logo {
     margin-top: 2rem;
@@ -405,16 +395,15 @@ h2 {
   .footer-links {
     grid-area: links;
   }
-
   .footer-contact {
     grid-area: contact;
   }
-
-  .footer-suscribe{
+  .footer-suscribe {
     grid-area: suscribe;
   }
-
   .footer-logo-link {
     grid-area: logo;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

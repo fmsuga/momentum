@@ -79,3 +79,15 @@ window.onload = function() {
 };
 
 
+// beneficios, que se pare la img al pasar el mouse
+
+const logoContainer = document.querySelector(".logo-track");
+
+logoContainer.addEventListener("mouseenter", () => {
+    logoContainer.style.animationPlayState = "paused"; // Se detiene la animación
+});
+
+logoContainer.addEventListener("mouseleave", () => {
+    logoContainer.style.animationPlayState = "running"; // Se reanuda
+});
+
