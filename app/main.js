@@ -47,8 +47,8 @@ const preciosBase = {
   anual: 17500,
 };
 
-// Recargo por pagar con tarjeta (%)
-const recargo = 1.10; // 10% más caro con tarjeta
+
+const recargo = 1.10; // 
 
 function cambiarPrecios(metodo) {
   if (metodo === 'tarjeta') {
@@ -64,17 +64,18 @@ function cambiarPrecios(metodo) {
   }
 
 
-// Quitar la clase "active" de todos los botones
+
 document.querySelectorAll('.btn-toggle').forEach(btn => {
   btn.classList.remove('active');
 });
 
-// Agregar la clase "active" al botón seleccionado
+
 document.getElementById(`btn-${metodo}`).classList.add("active");
 }
 
-// Establecer "Efectivo" como opción por defecto al cargar la página
+
 window.onload = function() {
   cambiarPrecios('efectivo');
 };
+
 

@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Momentum GYM</title>
+
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- link swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style/main.css">
-  
+
+
+
 </head>
 <body>
   
@@ -16,8 +30,8 @@
 
       <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-          <div class="logo">
-            <img src="img/momentum.png" alt="" srcset="" width="380">
+          <div class="logo"><a href="index.html">
+            <img src="img/momentum.png" alt="" srcset="" width="300"></a>
           </div>
                               
           <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,17 +42,18 @@
 
             <ul class="navbar-nav ms-auto mt-5 pe-5">
               
+              
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#planes">Planes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Planes</a>
+                <a class="nav-link" href="#actividades">Actividades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Actividades</a>
+                <a class="nav-link" href="#sede">Sede</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sede</a>
+                <a class="nav-link" href="#">Beneficios</a>
               </li>
               
           </div>
@@ -47,6 +62,10 @@
      
     </header>
   </div>
+<!-- Boton whatsapp -->
+  <a href="https://wa.me/549XXXXXXXXXX" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
   <main class="main-content">
 
@@ -61,20 +80,23 @@
 
 
   <div class="mejor-version">
-    <h3>Invertí <span style="color:#1e54e9"> en vos</span></h3>
+
+    <h3 data-aos="fade-down" data-aos-duration="1000" >Invertí <span style="color:#1e54e9"> en vos</span></h3>
     <p>
       En <strong>Momentum</strong>, nos dedicamos a llevar tu rendimiento al siguiente nivel. Ya sea que estés buscando mejorar tu resistencia, fuerza o transformar tu cuerpo, aquí encontrarás el apoyo y la motivación para alcanzar tus objetivos. No importa tu nivel, ¡el momento de comenzar es ahora!
     </p>
+    
 
     <a href="#planes" class="btn rounded-5 bg-btn">Ver Planes</a>
   </div>
 
-  <div class="actividades">
+  <div class="actividades" id="actividades">
 
-  
+    <h2>1 ABONO, <span>+6</span> actividades..</h2>
+    <p class="p-actividades">Estas son solo algunas de las actividades que podrás disfrutar con tu pase libre</p>
     <div class="row row-cols-1 row-cols-md-3 g-4 ">
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/musculacion.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Musculación</h5>
@@ -83,7 +105,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card"data-aos="fade-up" data-aos-delay="400">
           <img src="img/funcional.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Funcional</h5>
@@ -91,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col"data-aos="fade-up" data-aos-delay="600">
         <div class="card">
           <img src="img/gym-box.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -100,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col"data-aos="fade-up" data-aos-delay="800">
         <div class="card">
           <img src="img/gym-yoga.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -110,7 +132,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="1000">
           <img src="img/gym-spinning.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Spinning</h5>
@@ -120,7 +142,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="1200">
           <img src="img/gym-zumba.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Zumba</h5>
@@ -134,15 +156,15 @@
 
   </div>
 
-  <section class="sedes ">
-    <h3 class="texto-sede">Mirá nuestra sede en <span style="color:#1e54e9; font-size: larger;"> <strong>General Pico</strong></span></h3>
+  <section class="sedes " id="sede">
+    <h3 class="texto-sede">Mirá nuestra sede en <span> General Pico</span></h3>
     <p class="bg-warning rounded-5 p-2">Encontra la ubicacion de nuestro gimnasio y acercate hoy mismo</p>
     <div class="map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1orMrCy4cXm2GKvtGjAsZOX2Ci_e4FkQ&ehbc=2E312F" width="640" height="480"></iframe>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1orMrCy4cXm2GKvtGjAsZOX2Ci_e4FkQ&ehbc=2E312F" width="460" height="460"></iframe>
     </div>
   </section>
 
-  <section class="planes">
+  <section class="planes" id="planes">
 
     <h3>Mirá los planes que tenemos para vos</h3>
     <p class="p-resaltado">Entrená por solo <span style="color: rgb(4, 4, 97);"><strong>$17.500</strong></span></p>
@@ -171,7 +193,7 @@
               <div class="card card-plan">
                   <div class="card-body">
                       <h5 class="card-title">3 meses</h5>
-                      <p class="card-text">Pase libre por tres meses.</p>
+                      <p class="card-text">Todas nuestras actividades incluidas por un precio increíble por tres meses.</p>
                       <h6 class="text-primary fw-bold fs-5" id="precio-3meses">$27000</h6>
                   </div>
               </div>
@@ -180,7 +202,7 @@
               <div class="card card-plan">
                   <div class="card-body">
                       <h5 class="card-title">6 meses</h5>
-                      <p class="card-text">Pase libre por seis meses.</p>
+                      <p class="card-text">Todas nuestras actividades incluidas por un precio increíble por seis meses.</p>
                       <h6 class="text-primary fw-bold fs-5" id="precio-6meses">$50000</h6>
                   </div>
               </div>
@@ -188,8 +210,8 @@
           <div class="col">
               <div class="card">
                   <div class="card-body bg-primary text-white">
-                      <h5 class="card-title">Pase libre anual</h5>
-                      <p class="card-text">Pase libre anual.</p>
+                      <h5 class="card-title">1 año</h5>
+                      <p class="card-text">Todas nuestras actividades incluidas a un precio invatible.</p>
                       <h6 class="fw-bold fs-5" id="precio-anual">$90000</h6>
                   </div>
               </div>
@@ -202,13 +224,24 @@
 
 
 
-
+  <script src="app/lluvia.js"></script>
   <script src="app/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- script AO -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false // La animación solo ocurre una vez y el elemento queda visible
+    });
+  </script>
 
+  <!-- script swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </main>
+
+
 
 <footer class="footer">
   <div class="footer-content">
@@ -230,7 +263,7 @@
         <h4 class="footer-copy">Contactanos</h4>
 
         <p class="footer-info">
-          Email: ejemplo[at]mailgym.com
+          Email: ejemplo@gymmail.com
         </p>
 
         <p class="footer-info">
@@ -238,11 +271,12 @@
         </p>
 
         <p class="footer-info">
-          Direccion: Calle 20, N° 123, General Pico, La Pampa.
+          Dirección: Calle 20 N° 123, General Pico, La Pampa.
         </p>
 
         <p class="footer-info">
-          <a href="">Instagram</a>
+          <img src="img/ig.png" alt="" srcset="" class="ig">
+          <a href="https://www.instagram.com"  target="_blank">Instagram</a>
         </p>
       </article>
 
@@ -262,4 +296,6 @@
   </div>
   
 </footer>
+
+
 </html>

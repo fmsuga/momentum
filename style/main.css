@@ -17,7 +17,7 @@ html, body {
 }
 
 .main-content {
-  flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+  flex: 1;
 }
 
 .bg-navbar {
@@ -38,6 +38,32 @@ html, body {
 
 .navbar .navbar-nav .nav-item:hover .nav-link {
   color: white;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Cambiado a la derecha */
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  z-index: 9999; /* Asegura que quede por encima de otros elementos */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
 }
 
 .hero {
@@ -81,17 +107,29 @@ h2 {
 }
 
 .btn:hover {
-  background: rgb(16, 9, 83);
-  color: rgb(255, 255, 255);
+  background: #100953;
+  color: white;
 }
 
 .mejor-version {
-  background-color: whitesmoke;
+  background-color: white;
   padding: 4.5rem;
 }
 
 .actividades {
   padding: 1.5rem;
+  text-align: center;
+}
+.actividades h2 {
+  color: white;
+}
+.actividades h2 span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e54e9;
+}
+.actividades .p-actividades {
+  color: white;
 }
 
 .card {
@@ -113,21 +151,26 @@ h2 {
   flex-direction: column;
   margin-top: 8em;
 }
-
-.texto-sede {
+.sedes .texto-sede {
   color: white;
   margin-top: 1.5em;
 }
-
-.map {
-  margin-bottom: 5em;
+.sedes .texto-sede span {
+  color: #1e54e9;
+  font-size: larger;
+  font-weight: bold;
+}
+.sedes .map {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px;
+  margin-bottom: 1rem;
 }
 
 .planes {
-  background-image: url("../../img/momentum-gym2.jpg");
-  background-size: cover;
+  background-image: url("../../img/momentum-gymdos.jpg");
+  background-size: 100% 100%;
   margin-top: 4em;
-  height: 95vh;
+  height: 100vh;
   text-align: center;
 }
 .planes h3 {
@@ -181,7 +224,7 @@ h2 {
 
 .footer {
   background-color: #000000;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .footer-content {
@@ -225,7 +268,7 @@ h2 {
 .footer-copy {
   margin-top: 1rem;
   justify-self: center;
-  background-color: #2C74B3;
+  background-color: #A1E3F9;
   color: #0A2647;
   font-weight: 500;
   padding: 4px;
@@ -234,6 +277,7 @@ h2 {
 
 .footer-suscribe {
   width: min(100%, 400px);
+  height: 200px;
   padding: 2rem 1.5rem;
   background-color: #292a32;
   border-radius: 10px;
@@ -255,7 +299,7 @@ h2 {
 }
 
 .footer-submit {
-  background-color: #2C74B3;
+  background-color: #A1E3F9;
   color: #0A2647;
   border: none;
   font-weight: 500;
@@ -273,9 +317,17 @@ h2 {
   color: white;
 }
 
+.ig {
+  width: 15%;
+}
+
+.footer-info a {
+  color: white;
+}
+
 @media (width >= 900px) {
   .footer {
-    background-color: #001b29;
+    background-color: #00141F;
   }
   .footer-content {
     background-color: #000000;
